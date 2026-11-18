@@ -7,7 +7,7 @@ const copy = {
     nav: ['Home', 'Biochemicals', 'Diagnostics', 'Global Partnerships', 'About Us', 'Contact'],
     eyebrow: 'BIOCHEMICALS · DIAGNOSTICS · GLOBAL SUPPLY', title: 'Reliable science. Thoughtful supply.',
     intro: 'Chongqing Longfor Biotechnology is the export agency and overseas marketing lead for a focused portfolio of high-purity biochemical materials and selected diagnostic products.',
-    explore: 'Explore our products', contactCta: 'Talk to our team',
+    explore: 'Explore our products', contactCta: 'Contact our team',
     homeLabel: 'CHONGQING LONGFOR BIOTECHNOLOGY', aboutTitle: 'Your export and overseas marketing partner in life science.',
     aboutText: 'Founded in 2016, Longfor represents products to international markets, coordinating export, overseas marketing and commercial partnerships across pharmaceutical and biotechnology sectors.',
     stat1: 'Established', stat2: 'Production partners', stat3: 'Core categories',
@@ -16,20 +16,20 @@ const copy = {
     product2: 'Cell Culture Media Raw Materials', product2Desc: 'Materials for cell culture formulations. Low-endotoxin grades available on request.', product2Meta: 'CELL CULTURE · LOW-ENDOTOXIN OPTIONS',
     product3: 'Bioactive Substances', product3Desc: 'High-purity materials with consistent batches and dependable supply planning.', product3Meta: 'HIGH PURITY · BATCH CONSISTENCY',
     product4: 'Pharma Intermediates', product4Desc: 'Controlled impurities, with process development and scale-up support.', product4Meta: 'IMPURITY CONTROL · SCALE-UP SUPPORT',
-    diagnosticsEyebrow: 'MOLECULAR DIAGNOSTICS · PRODUCT 01', diagnosticsTitle: 'A selected diagnostic product for global markets.', diagnosticsIntro: 'Longfor leads export and overseas marketing for this partner-supplied colorectal cancer testing kit. The product is currently in Phase III clinical trials in China, with overseas commercialization planned for a later stage.',
-    featureTitle: '5-Gene Stool DNA Methylation Test', featureText: 'Intended for in vitro qualitative detection of the methylation status of SDC2, NDRG4, SFRP2, TFPI2 and BMP3 in exfoliated intestinal cells from human fecal samples.', featureNote: 'Product supplied by NorDa Medical. International export and overseas marketing by Longfor Biotechnology. Investigational product; not available for routine clinical use unless and until authorized in the relevant market.', genes: ['SDC2', 'NDRG4', 'SFRP2', 'TFPI2', 'BMP3'],
-    backgroundTitle: 'Clinical context described in the product materials', crcBackground: 'The brochure describes colorectal cancer as a prevalent gastrointestinal malignancy and reports global rankings of third for incidence and second for cancer mortality. The supplied pages do not cite the underlying source or year.',
-    intendedPopulation: 'The annotated review proposes that the kit may be intended as an aid in diagnosis for high-risk individuals who were advised by a clinician to undergo colonoscopy but cannot complete it because of poor adherence or medical reasons. Confirm this population and wording against the approved instructions for use.',
-    stageContext: 'The brochure reports that many patients with colorectal cancer are diagnosed at Stage II–III.', surgerySurvival: 'The brochure states that five-year survival among patients treated with surgery alone is below 50%.', earlyIntervention: 'The product materials emphasize intervention during the precancerous stage as a strategy for cancer management.',
-    metastaticContext: 'The annotated review cites additional Chinese-source background: approximately 50% of patients may develop metastases; for metastatic disease, median survival is stated as 24–30 months and five-year survival as approximately 14%.', molecularContext: 'Genomic instability, epigenetic abnormalities and dysregulated gene expression are described as characteristic molecular features of colorectal cancer.',
-    comparisonTitle: 'Testing approaches shown in the source brochure', colonoscopy: 'Bowel preparation for colonoscopy may cause discomfort, as described in the source materials.', fobt: 'Fecal occult blood testing results may be affected by interfering factors.', methylation: 'The brochure describes DNA methylation testing as non-invasive, convenient and accurate. Comparative performance claims require supporting evidence.',
+    diagnosticsEyebrow: 'MOLECULAR DIAGNOSTICS PRODUCTS', diagnosticsTitle: 'Selected diagnostic products for global markets.', diagnosticsIntro: 'Chongqing Longfor Biotechnology manages export and overseas marketing for a partner-supplied colorectal cancer testing kit. The product is currently in clinical trials in China, with launch approaching and overseas commercialization planned to begin in parallel.',
+    featureTitle: '5-Gene Stool DNA Methylation Test', featureText: 'For in vitro qualitative detection of the methylation status of SDC2, NDRG4, SFRP2, TFPI2 and BMP3 genes in exfoliated intestinal cells from human fecal samples.', featureNote: 'Supplied by NorDa Medical. Export and overseas marketing managed by Chongqing Longfor Biotechnology.', genes: ['SDC2', 'NDRG4', 'SFRP2', 'TFPI2', 'BMP3'],
+    backgroundTitle: 'Colorectal cancer is a common gastrointestinal malignancy', crcBackground: 'It ranks third worldwide for incidence and second for cancer mortality.',
+    intendedPopulation: 'This kit is intended as an aid to diagnosis for certain high-risk populations.',
+    stageContext: 'Many patients with colorectal cancer are diagnosed at Stage II–III.', surgerySurvival: 'Five-year survival is below 50% among patients treated with surgery alone.', earlyIntervention: 'Intervention during the precancerous stage is one strategy for cancer management.',
+    metastaticContext: 'Approximately 50% of patients may develop metastases. For metastatic disease, median survival is 24–30 months and five-year survival is approximately 14%.', molecularContext: 'Genomic instability, epigenetic abnormalities and dysregulated gene expression are molecular features of colorectal cancer.',
+    comparisonTitle: 'Comparing screening methods', colonoscopy: 'Bowel preparation before colonoscopy may cause discomfort.', fobt: 'Results may be affected by interfering factors.', methylation: 'Non-invasive, convenient and accurate.',
     method: 'Methylation-specific quantitative PCR (qPCR)', platform: 'ABI 7500 Real-Time PCR System', assaySteps: [
       { title: 'Sample collection', text: 'Place the fecal sample in DNA preservation buffer.' },
       { title: 'Extraction', text: 'Remove interfering substances; extract and enrich human DNA, including DNA with methylated target genes.' },
       { title: 'Bisulfite treatment', text: 'Convert unmethylated cytosine (C) to uracil (U); purify converted single-stranded DNA.' },
       { title: 'qPCR', text: 'Detect multiple loci with methylation-specific primers and differently labeled probes.' },
-      { title: 'Data analysis', text: 'Combine the five-gene results with AI-assisted interpretation. The source calls the output a “risk P-value”; confirm the intended term in the final IFU.' },
-    ], controlNote: 'The annotated review indicates that the Chinese workflow also refers to a bisulfite-specific internal control gene and positive/negative controls. Confirm the control design and sample-validity rules against the final instructions for use.',
+      { title: 'Data analysis', text: 'Combine the five-gene results and use AI-assisted interpretation.' },
+    ], controlNote: '',
     technicalTitle: 'Technical parameters reported in the brochure', lod: 'The brochure reports detection of methylation levels of ≥1% for the five target genes in a background of 5 ng/µL genomic DNA. Confirm the definition and validation basis for this limit of detection.',
     repeatability: 'For the same reference material tested across different kit batches, the brochure reports inter-lot and intra-lot coefficients of variation below 5%. The measured quantity is not specified in the supplied pages.',
     performanceTitle: 'Clinical performance reported in source materials', performance: [
@@ -74,18 +74,18 @@ function App() {
     <header className="header"><a className="brand-link" href="#home" aria-label="Longfor home"><Brand /></a><nav className="nav" aria-label="Main navigation">{t.nav.map((item, i) => <a key={pages[i]} href={`#${pages[i]}`} className={page === pages[i] ? 'active' : ''} aria-current={page === pages[i] ? 'page' : undefined}>{item}</a>)}</nav></header>
 
     <main className={`page page-${page}`} key={page}>
-      {page === 'home' && <><section className="home-main page-main"><div className="page-copy"><div className="eyebrow"><span className="eyebrow-line" />{t.eyebrow}</div><h1>{t.title}</h1><p className="lead">{t.intro}</p><div className="hero-actions"><a className="button button-dark" href="#biochemicals">{t.explore}<Arrow /></a><a className="text-link" href="#contact">{t.contactCta}<Arrow diagonal /></a></div><div className="home-signature">CHONGQING <span>·</span> EST. 2016</div></div><Visual /></section><section className="home-strip"><div className="home-strip-copy"><div className="section-label"><span>01</span>{t.homeLabel}</div><h2>{t.aboutTitle}</h2></div><div className="home-strip-right"><p>{t.aboutText}</p><div className="stats"><div><strong>2016</strong><span>{t.stat1}</span></div><div><strong>02</strong><span>{t.stat2}</span></div><div><strong>04</strong><span>{t.stat3}</span></div></div><div className="strip-links"><a href="#biochemicals">{t.nav[1]}<Arrow diagonal /></a><a href="#diagnostics">{t.nav[2]}<Arrow diagonal /></a></div></div></section></>}
+      {page === 'home' && <><section className="home-main page-main"><div className="page-copy"><div className="eyebrow"><span className="eyebrow-line" />{t.eyebrow}</div><h1>{t.title}</h1><p className="lead">{t.intro}</p><div className="hero-actions"><a className="button button-dark" href="#biochemicals">{t.explore}<Arrow /></a><a className="text-link" href="#contact">{t.contactCta}<Arrow diagonal /></a></div><div className="home-signature">CHONGQING <span>·</span> EST. 2016</div></div><Visual /></section><section className="home-strip"><div className="home-strip-copy"><div className="section-label"><span>01</span>{t.homeLabel}</div><h2>{t.aboutTitle}</h2></div><div className="home-strip-right"><p>{t.aboutText}</p><div className="stats"><div><strong>2016</strong><span>{t.stat1}</span></div><div><strong>02</strong><span>{t.stat2}</span></div><div><strong>04</strong><span>{t.stat3}</span></div></div><div className="strip-links"><a href="#biochemicals">{t.nav[1]}<Arrow diagonal /></a><a href="#diagnostics">{t.nav[2]}<Arrow diagonal /></a><a href="#about">{t.nav[4]}<Arrow diagonal /></a></div></div></section></>}
 
       {page === 'biochemicals' && <section className="catalog-page"><div className="catalog-heading"><div className="eyebrow"><span className="eyebrow-line" />{t.biochemEyebrow}</div><h1>{t.biochemTitle}</h1><p className="lead">{t.biochemIntro}</p></div><div className="catalog-grid">{[1,2,3,4].map((id) => <article className={`catalog-card catalog-card-${id}`} key={id}><span className="catalog-number">0{id}</span><div className="catalog-symbol">{['NH₂','CELL','BIO','API'][id-1]}</div><div className="catalog-card-copy"><span className="catalog-meta">{t[`product${id}Meta`]}</span><h2>{t[`product${id}`]}</h2><p>{t[`product${id}Desc`]}</p><a href="#contact">{t.contactCta}<Arrow diagonal /></a></div></article>)}</div></section>}
 
       {page === 'diagnostics' && <section className="diagnostics-page-main">
         <div className="page-main detail-main diagnostics-intro">
-          <div className="page-copy"><div className="eyebrow"><span className="eyebrow-line" />{t.diagnosticsEyebrow}</div><h1>{t.diagnosticsTitle}</h1><p className="lead">{t.diagnosticsIntro}</p><span className="phase-badge"><i />CHINA · PHASE III CLINICAL TRIAL</span></div>
+          <div className="page-copy"><div className="eyebrow"><span className="eyebrow-line" />{t.diagnosticsEyebrow}</div><h1>{t.diagnosticsTitle}</h1><p className="lead">{t.diagnosticsIntro}</p><span className="phase-badge"><i />CHINA · CURRENTLY IN CLINICAL TRIALS</span></div>
           <Visual type="dna" />
         </div>
 
         <section className="product-overview product-section">
-          <div className="product-copy"><div className="product-kicker">PARTNER PRODUCT / 01</div><h2>{t.featureTitle}</h2><p>{t.featureText}</p><div className="gene-pills">{t.genes.map(gene => <span key={gene}>{gene}</span>)}</div><aside className="population-note"><span>INTENDED POPULATION · VERIFY AGAINST APPROVED IFU</span><p>{t.intendedPopulation}</p></aside><div className="role-grid"><div><span>{t.supplierRole}</span><strong>{t.supplierName}</strong></div><div><span>{t.marketingRole}</span><strong>{t.marketingName}</strong></div></div><small className="product-disclaimer">{t.featureNote}</small></div>
+          <div className="product-copy"><div className="product-kicker">PARTNER PRODUCT / 01</div><h2>{t.featureTitle}</h2><p>{t.featureText}</p><div className="gene-pills">{t.genes.map(gene => <span key={gene}>{gene}</span>)}</div><aside className="population-note"><span>INTENDED POPULATION</span><p>{t.intendedPopulation}</p></aside><div className="role-grid"><div><span>{t.supplierRole}</span><strong>{t.supplierName}</strong></div><div><span>{t.marketingRole}</span><strong>{t.marketingName}</strong></div></div></div>
           <figure className="product-figure"><img src={asset('product2/kit-packaging.png')} alt="Two views of the five-gene stool DNA methylation kit packaging shown in the partner product brochure" /><figcaption>Partner product packaging shown in the supplied Product 2 brochure.</figcaption></figure>
         </section>
 
@@ -95,31 +95,13 @@ function App() {
           <div className="clinical-facts"><article><strong>Stage II–III</strong><p>{t.stageContext}</p></article><article><strong>&lt;50%</strong><p>{t.surgerySurvival}</p></article><article><strong>~50%</strong><p>{t.metastaticContext}</p></article></div>
           <div className="rationale-notes"><p>{t.earlyIntervention}</p><p>{t.molecularContext}</p></div>
           <div className="comparison-block"><div className="section-title compact"><div className="eyebrow"><span className="eyebrow-line" />METHOD COMPARISON</div><h3>{t.comparisonTitle}</h3></div><figure className="comparison-figure"><img src={asset('product2/screening-methods.png')} alt="Source brochure illustrations comparing colonoscopy, fecal occult blood testing, and DNA methylation" /><figcaption>Illustrations reproduced from the supplied product brochure.</figcaption></figure><div className="method-cards"><article><h4>Colonoscopy</h4><p>{t.colonoscopy}</p></article><article><h4>Fecal occult blood testing (FOBT)</h4><p>{t.fobt}</p></article><article><h4>DNA methylation</h4><p>{t.methylation}</p></article></div></div>
-          <small className="source-caveat">Background figures and descriptions above are attributed to the supplied product materials; underlying references were not included and should be verified before external publication.</small>
         </section>
 
         <section className="assay-section product-section">
           <div className="section-title"><div className="eyebrow"><span className="eyebrow-line" />ASSAY PROCEDURE</div><h2>From stool sample to five-gene result.</h2></div>
           <div className="assay-meta"><div><span>ASSAY METHOD</span><strong>{t.method}</strong></div><div><span>ASSAY PLATFORM</span><strong>{t.platform}</strong></div></div>
           <ol className="assay-steps">{t.assaySteps.map((step, i) => <li key={step.title}><span className="step-number">0{i + 1}</span><h3>{step.title}</h3><p>{step.text}</p></li>)}</ol>
-          <p className="control-note">{t.controlNote}</p>
-          <figure className="source-figure procedure-figure"><img src={asset('product2/assay-procedure.png')} alt="Assay procedure figure from the product brochure, including sample collection, extraction, bisulfite treatment, qPCR, and data analysis" /><figcaption>Assay workflow image reproduced from the supplied Product 2 brochure. Its control and result-output details should be checked against the final instructions for use.</figcaption></figure>
-        </section>
-
-        <section className="performance-section product-section">
-          <div className="section-title"><div className="eyebrow"><span className="eyebrow-line" />TECHNICAL PARAMETERS</div><h2>{t.technicalTitle}</h2></div>
-          <div className="technical-cards"><article><span>LIMIT OF DETECTION</span><p>{t.lod}</p></article><article><span>REPEATABILITY</span><p>{t.repeatability}</p></article></div>
-          <div className="performance-heading"><div><div className="product-kicker">BROCHURE-REPORTED DATA</div><h3>{t.performanceTitle}</h3></div><p>{t.studySource}</p></div>
-          <div className="performance-grid">{t.performance.map(([name, value]) => <article key={name}><span>{name}</span><strong>{value}</strong></article>)}</div>
-          <p className="data-caution">{t.dataCaution}</p>
-          <figure className="source-figure performance-figure"><img src={asset('product2/technical-performance.png')} alt="Technical parameter and clinical performance panel as shown in the supplied product brochure" /><figcaption>Source technical-performance panel. Figures are shown as reported in the brochure.</figcaption></figure>
-        </section>
-
-        <section className="market-section product-section">
-          <div className="section-title"><div className="eyebrow"><span className="eyebrow-line" />COMMERCIALIZATION CONCEPT</div><h2>{t.marketTitle}</h2></div>
-          <ol className="market-steps">{t.marketSteps.map((step, i) => <li key={step}><span>0{i + 1}</span><strong>{step}</strong>{i < t.marketSteps.length - 1 && <b aria-hidden="true">→</b>}</li>)}</ol>
-          <p className="market-caveat">{t.marketCaution}</p>
-          <figure className="source-figure market-figure"><img src={asset('product2/market-workflow-reference.png')} alt="Commercialization workflow and China-market e-commerce screenshot shown in the source brochure" /><figcaption>Reference image from the supplied brochure, retained for context; this is not a Longfor web shop or a confirmed overseas sales channel.</figcaption></figure>
+          <figure className="source-figure procedure-figure"><img src={asset('product2/assay-procedure.png')} alt="Five-step assay workflow: sample collection, DNA extraction, bisulfite treatment, qPCR, and data analysis" /><figcaption>Five-step assay workflow</figcaption></figure>
         </section>
       </section>}
 
