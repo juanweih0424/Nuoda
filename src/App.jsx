@@ -46,7 +46,9 @@ const copy = {
 }
 
 function Arrow({ diagonal = false }) { return <span aria-hidden="true" className="arrow">{diagonal ? '↗' : '→'}</span> }
-function Brand() { return <span className="brand"><img src="/longfor-mark.png" alt="" className="longfor-mark" /><img src="/longfor-word.png" alt="Longfor" className="longfor-word" /></span> }
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`
+
+function Brand() { return <span className="brand"><img src={asset('longfor-mark.png')} alt="" className="longfor-mark" /><img src={asset('longfor-word.png')} alt="Longfor" className="longfor-word" /></span> }
 function Visual({ type = 'molecule' }) {
   if (type === 'dna') return <div className="page-visual dna-visual"><div className="dna-strand strand-one" /><div className="dna-strand strand-two" /><div className="gene-tag tag-one">SDC2</div><div className="gene-tag tag-two">NDRG4</div><div className="gene-tag tag-three">SFRP2</div><div className="gene-tag tag-four">TFPI2</div><div className="gene-tag tag-five">BMP3</div><span className="visual-index">5-GENE PANEL</span></div>
   if (type === 'lab') return <div className="page-visual lab-visual"><div className="scan-frame"><div className="scan-screen"><span /><span /><span /><span /><span /></div><div className="scan-base" /></div><span className="visual-index">MOLECULAR / 05</span></div>
@@ -84,7 +86,7 @@ function App() {
 
         <section className="product-overview product-section">
           <div className="product-copy"><div className="product-kicker">PARTNER PRODUCT / 01</div><h2>{t.featureTitle}</h2><p>{t.featureText}</p><div className="gene-pills">{t.genes.map(gene => <span key={gene}>{gene}</span>)}</div><aside className="population-note"><span>INTENDED POPULATION · VERIFY AGAINST APPROVED IFU</span><p>{t.intendedPopulation}</p></aside><div className="role-grid"><div><span>{t.supplierRole}</span><strong>{t.supplierName}</strong></div><div><span>{t.marketingRole}</span><strong>{t.marketingName}</strong></div></div><small className="product-disclaimer">{t.featureNote}</small></div>
-          <figure className="product-figure"><img src="/product2/kit-packaging.png" alt="Two views of the five-gene stool DNA methylation kit packaging shown in the partner product brochure" /><figcaption>Partner product packaging shown in the supplied Product 2 brochure.</figcaption></figure>
+          <figure className="product-figure"><img src={asset('product2/kit-packaging.png')} alt="Two views of the five-gene stool DNA methylation kit packaging shown in the partner product brochure" /><figcaption>Partner product packaging shown in the supplied Product 2 brochure.</figcaption></figure>
         </section>
 
         <section className="clinical-section product-section">
@@ -92,7 +94,7 @@ function App() {
           <p className="clinical-intro">{t.crcBackground}</p>
           <div className="clinical-facts"><article><strong>Stage II–III</strong><p>{t.stageContext}</p></article><article><strong>&lt;50%</strong><p>{t.surgerySurvival}</p></article><article><strong>~50%</strong><p>{t.metastaticContext}</p></article></div>
           <div className="rationale-notes"><p>{t.earlyIntervention}</p><p>{t.molecularContext}</p></div>
-          <div className="comparison-block"><div className="section-title compact"><div className="eyebrow"><span className="eyebrow-line" />METHOD COMPARISON</div><h3>{t.comparisonTitle}</h3></div><figure className="comparison-figure"><img src="/product2/screening-methods.png" alt="Source brochure illustrations comparing colonoscopy, fecal occult blood testing, and DNA methylation" /><figcaption>Illustrations reproduced from the supplied product brochure.</figcaption></figure><div className="method-cards"><article><h4>Colonoscopy</h4><p>{t.colonoscopy}</p></article><article><h4>Fecal occult blood testing (FOBT)</h4><p>{t.fobt}</p></article><article><h4>DNA methylation</h4><p>{t.methylation}</p></article></div></div>
+          <div className="comparison-block"><div className="section-title compact"><div className="eyebrow"><span className="eyebrow-line" />METHOD COMPARISON</div><h3>{t.comparisonTitle}</h3></div><figure className="comparison-figure"><img src={asset('product2/screening-methods.png')} alt="Source brochure illustrations comparing colonoscopy, fecal occult blood testing, and DNA methylation" /><figcaption>Illustrations reproduced from the supplied product brochure.</figcaption></figure><div className="method-cards"><article><h4>Colonoscopy</h4><p>{t.colonoscopy}</p></article><article><h4>Fecal occult blood testing (FOBT)</h4><p>{t.fobt}</p></article><article><h4>DNA methylation</h4><p>{t.methylation}</p></article></div></div>
           <small className="source-caveat">Background figures and descriptions above are attributed to the supplied product materials; underlying references were not included and should be verified before external publication.</small>
         </section>
 
@@ -101,7 +103,7 @@ function App() {
           <div className="assay-meta"><div><span>ASSAY METHOD</span><strong>{t.method}</strong></div><div><span>ASSAY PLATFORM</span><strong>{t.platform}</strong></div></div>
           <ol className="assay-steps">{t.assaySteps.map((step, i) => <li key={step.title}><span className="step-number">0{i + 1}</span><h3>{step.title}</h3><p>{step.text}</p></li>)}</ol>
           <p className="control-note">{t.controlNote}</p>
-          <figure className="source-figure procedure-figure"><img src="/product2/assay-procedure.png" alt="Assay procedure figure from the product brochure, including sample collection, extraction, bisulfite treatment, qPCR, and data analysis" /><figcaption>Assay workflow image reproduced from the supplied Product 2 brochure. Its control and result-output details should be checked against the final instructions for use.</figcaption></figure>
+          <figure className="source-figure procedure-figure"><img src={asset('product2/assay-procedure.png')} alt="Assay procedure figure from the product brochure, including sample collection, extraction, bisulfite treatment, qPCR, and data analysis" /><figcaption>Assay workflow image reproduced from the supplied Product 2 brochure. Its control and result-output details should be checked against the final instructions for use.</figcaption></figure>
         </section>
 
         <section className="performance-section product-section">
@@ -110,14 +112,14 @@ function App() {
           <div className="performance-heading"><div><div className="product-kicker">BROCHURE-REPORTED DATA</div><h3>{t.performanceTitle}</h3></div><p>{t.studySource}</p></div>
           <div className="performance-grid">{t.performance.map(([name, value]) => <article key={name}><span>{name}</span><strong>{value}</strong></article>)}</div>
           <p className="data-caution">{t.dataCaution}</p>
-          <figure className="source-figure performance-figure"><img src="/product2/technical-performance.png" alt="Technical parameter and clinical performance panel as shown in the supplied product brochure" /><figcaption>Source technical-performance panel. Figures are shown as reported in the brochure.</figcaption></figure>
+          <figure className="source-figure performance-figure"><img src={asset('product2/technical-performance.png')} alt="Technical parameter and clinical performance panel as shown in the supplied product brochure" /><figcaption>Source technical-performance panel. Figures are shown as reported in the brochure.</figcaption></figure>
         </section>
 
         <section className="market-section product-section">
           <div className="section-title"><div className="eyebrow"><span className="eyebrow-line" />COMMERCIALIZATION CONCEPT</div><h2>{t.marketTitle}</h2></div>
           <ol className="market-steps">{t.marketSteps.map((step, i) => <li key={step}><span>0{i + 1}</span><strong>{step}</strong>{i < t.marketSteps.length - 1 && <b aria-hidden="true">→</b>}</li>)}</ol>
           <p className="market-caveat">{t.marketCaution}</p>
-          <figure className="source-figure market-figure"><img src="/product2/market-workflow-reference.png" alt="Commercialization workflow and China-market e-commerce screenshot shown in the source brochure" /><figcaption>Reference image from the supplied brochure, retained for context; this is not a Longfor web shop or a confirmed overseas sales channel.</figcaption></figure>
+          <figure className="source-figure market-figure"><img src={asset('product2/market-workflow-reference.png')} alt="Commercialization workflow and China-market e-commerce screenshot shown in the source brochure" /><figcaption>Reference image from the supplied brochure, retained for context; this is not a Longfor web shop or a confirmed overseas sales channel.</figcaption></figure>
         </section>
       </section>}
 
