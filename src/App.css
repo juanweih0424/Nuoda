@@ -49,6 +49,22 @@
 .procedure-figure { max-width: 1240px; }
 .performance-figure { max-width: 1120px; }
 .market-figure { max-width: 1000px; }
+.method-cards article { grid-template-columns: 1fr; }
+.method-cards figure { min-width: 0; }
+.method-cards figure img { width: 100%; aspect-ratio: 1.1; object-fit: cover; }
+.method-cards figcaption { padding-top: 8px; font-size: 17px; }
+.method-card-copy h4 { margin: 0 0 7px; }
+.method-card-copy p { margin: 0; }
+.comparison-caption { margin-top: 14px; }
+@media (max-width: 760px) {
+  .method-cards { grid-template-columns: 1fr; gap: 12px; }
+  .method-cards article { grid-template-columns: minmax(110px, 38%) 1fr; align-items: start; gap: 14px; padding: 14px; }
+  .method-cards figure img { aspect-ratio: 1.1; }
+  .method-cards figcaption { font-size: 15px; }
+  .method-card-copy { padding-top: 7px; }
+  .method-card-copy h4 { font-size: 16px; line-height: 1.4; }
+  .method-card-copy p { font-size: 14px; }
+}
 
 @media (max-width: 760px) {
   .diagnostics-intro { min-height: unset; }

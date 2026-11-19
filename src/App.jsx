@@ -94,7 +94,11 @@ function App() {
           <p className="clinical-intro">{t.crcBackground}</p>
           <div className="clinical-facts"><article><strong>Stage II–III</strong><p>{t.stageContext}</p></article><article><strong>&lt;50%</strong><p>{t.surgerySurvival}</p></article><article><strong>~50%</strong><p>{t.metastaticContext}</p></article></div>
           <div className="rationale-notes"><p>{t.earlyIntervention}</p><p>{t.molecularContext}</p></div>
-          <div className="comparison-block"><div className="section-title compact"><div className="eyebrow"><span className="eyebrow-line" />METHOD COMPARISON</div><h3>{t.comparisonTitle}</h3></div><figure className="comparison-figure"><img src={asset('product2/screening-methods.png')} alt="Source brochure illustrations comparing colonoscopy, fecal occult blood testing, and DNA methylation" /><figcaption>Illustrations reproduced from the supplied product brochure.</figcaption></figure><div className="method-cards"><article><h4>Colonoscopy</h4><p>{t.colonoscopy}</p></article><article><h4>Fecal occult blood testing (FOBT)</h4><p>{t.fobt}</p></article><article><h4>DNA methylation</h4><p>{t.methylation}</p></article></div></div>
+          <div className="comparison-block"><div className="section-title compact"><div className="eyebrow"><span className="eyebrow-line" />METHOD COMPARISON</div><h3>{t.comparisonTitle}</h3></div><div className="method-cards">
+            <article><figure><img src={asset('product2/comparison-colonoscopy.png')} alt="Illustration of a colonoscopy procedure" /><figcaption>Colonoscopy</figcaption></figure><div className="method-card-copy"><h4>Colonoscopy</h4><p>{t.colonoscopy}</p></div></article>
+            <article><figure><img src={asset('product2/comparison-fobt.png')} alt="FOBT test strips" /><figcaption>FOBT</figcaption></figure><div className="method-card-copy"><h4>Fecal occult blood testing (FOBT)</h4><p>{t.fobt}</p></div></article>
+            <article><figure><img src={asset('product2/comparison-methylation.png')} alt="DNA methylation illustration" /><figcaption>DNA Methylation</figcaption></figure><div className="method-card-copy"><h4>DNA methylation</h4><p>{t.methylation}</p></div></article>
+          </div><p className="comparison-caption">Illustrations reproduced from the supplied product brochure.</p></div>
         </section>
 
         <section className="assay-section product-section">
