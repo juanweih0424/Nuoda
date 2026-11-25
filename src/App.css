@@ -94,6 +94,57 @@
   .assay-graphic-only { padding-top: 35px; padding-bottom: 35px; }
 }
 
+/* Adjustments from the latest diagnostic-page review */
+.diagnostics-intro .page-copy h1 { max-width: 760px; margin: 12px 0 8px; font-size: 18px; line-height: 1.9; font-weight: 700; letter-spacing: 0; }
+.product-copy .product-kicker { margin-bottom: 8px; color: #7798a1; font-size: 13px; font-weight: 600; }
+.product-copy h2 { margin: 0 0 12px; font-size: 17px; line-height: 1.6; font-weight: 700; letter-spacing: 0; }
+.supplier-profile-title { margin: 10px 0 12px; color: #23434a; font-size: 16px; line-height: 1.6; font-weight: 700; }
+.clinical-summary { margin-top: 0; }
+.clinical-eyebrow { max-width: 1200px; margin: 0 auto 15px; }
+.method-cards-text article { min-height: 175px; padding: 22px; display: flex; flex-direction: column; gap: 11px; background: #f9fbfc; border: 1px solid #dbe6ea; border-top: 2px solid #a8c5ce; }
+.method-cards-text .method-number { color: #8baab2; font-size: 13px; letter-spacing: .13em; }
+.method-cards-text h4 { margin: 0; color: #345760; font-size: 17px; font-weight: 600; line-height: 1.45; }
+.method-cards-text p { margin: 0; color: #6c7f84; font-size: 15px; line-height: 1.7; }
+.assay-method-meta { max-width: 1200px; margin: 0 auto 22px; padding-bottom: 17px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; border-bottom: 1px solid #dce6e9; }
+.assay-method-meta div { display: flex; flex-direction: column; gap: 7px; }
+.assay-method-meta span { color: #78969d; font-size: 12px; letter-spacing: .13em; }
+.assay-method-meta strong { color: #345760; font-size: 16px; font-weight: 600; }
+.assay-graphic-only .assay-steps { margin-bottom: 0; }
+.technical-unified-heading { max-width: 1200px; margin: 0 auto 24px; color: #668779; font-size: 13px; font-weight: 700; letter-spacing: .14em; }
+.performance-heading h3 { color: #2d4c53; font-size: 19px; font-weight: 600; margin: 0; }
+.comparison-block > .section-title.compact { max-width: none; margin-left: 0; margin-right: 0; }
+.performance-section .technical-cards.unified-parameter-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 10px; margin-bottom: 0; }
+.unified-parameter-grid article { min-height: 132px; padding: 17px 18px; }
+.unified-parameter-grid article > span { color: #789096; font-size: 13px; line-height: 1.45; letter-spacing: .08em; }
+.unified-parameter-grid article p { margin: 10px 0 0; color: #637980; font-size: 14px; line-height: 1.65; }
+.unified-parameter-grid article p strong { color: #315f6b; font-size: 22px; line-height: 1.25; font-weight: 500; }
+.performance-copy { max-width: 1200px; margin: 0 auto; width: 100%; }
+.performance-copy h2 { margin: 18px 0 20px; color: #23434a; font-size: 24px; line-height: 1.3; font-weight: 600; }
+.performance-description { margin: 0 0 12px; color: #4d666d; font-size: 17px; line-height: 1.8; }
+.performance-description strong { color: #31545d; font-weight: 700; }
+.clinical-utility { margin-top: 32px; }
+.clinical-utility h3 { margin: 0 0 13px; color: #31545d; font-size: 21px; line-height: 1.4; font-weight: 600; }
+.clinical-utility ul { list-style: none; padding: 0; margin: 0; border-top: 1px solid #d7e2e6; }
+.clinical-utility li { min-height: 48px; padding: 11px 2px; display: grid; grid-template-columns: minmax(250px, 420px) auto; align-items: center; justify-content: start; gap: 18px; border-bottom: 1px solid #d7e2e6; color: #526e75; font-size: 16px; }
+.clinical-utility li strong { color: #31545d; font-weight: 600; }
+.clinical-utility li span { color: #315f6b; font-size: 19px; font-weight: 600; font-variant-numeric: tabular-nums; }
+@media (max-width: 760px) {
+  .performance-copy h2 { font-size: 21px; }
+  .performance-description { font-size: 15px; }
+  .clinical-utility li { font-size: 14px; }
+  .clinical-utility li { grid-template-columns: minmax(0,55%) auto; }
+  .clinical-utility li span { font-size: 17px; }
+}
+@media (max-width: 760px) {
+  .diagnostics-intro .page-copy h1 { margin: 12px 0 8px; font-size: 17px; line-height: 1.7; }
+  .product-copy h2 { font-size: 17px; }
+  .supplier-profile-title { font-size: 16px; }
+  .method-cards-text article { min-height: unset; }
+  .assay-method-meta { grid-template-columns: 1fr; }
+  .performance-section .technical-cards.unified-parameter-grid { grid-template-columns: 1fr 1fr; }
+  .unified-parameter-grid article { min-height: 145px; }
+}
+
 @media (max-width: 760px) {
   .diagnostics-intro { min-height: unset; }
   .diagnostics-intro .page-visual { height: 68vw; }
